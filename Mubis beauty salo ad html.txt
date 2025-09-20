@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mubi's Beauty Salon - Your Destination for Radiance</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for stylish writing -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Custom CSS for a beautiful gradient background */
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #fce3e6 0%, #ffe4e1 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+            color: #4a4a4a;
+        }
+        .ad-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 2rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            backdrop-filter: blur(10px);
+            max-width: 600px;
+            width: 100%;
+            overflow: hidden;
+        }
+        .dancing-script {
+            font-family: 'Dancing Script', cursive;
+        }
+        .section-header {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+    </style>
+</head>
+<body class="selection:bg-pink-300 selection:text-white">
+    <div class="ad-card p-8 sm:p-12 text-center">
+        <h1 class="dancing-script text-pink-500 text-6xl sm:text-7xl font-bold mb-4 tracking-wide fade-in">Mubi's Beauty Salon</h1>
+        <p class="text-xl sm:text-2xl font-light mb-8 italic fade-in" style="animation-delay: 0.2s;">
+            Where your beauty journey begins.
+        </p>
+        
+        <p class="mb-8 text-sm sm:text-base leading-relaxed fade-in" style="animation-delay: 0.4s;">
+            Step into Mubi's Beauty Salon and discover a world of relaxation and elegance. We specialize in enhancing your natural beauty with professional services designed to make you look and feel your absolute best.
+        </p>
+
+        <!-- Services Section with short descriptions -->
+        <div class="space-y-8 fade-in" style="animation-delay: 0.6s;">
+            <div class="bg-white/70 p-6 rounded-3xl shadow-lg">
+                <h3 class="section-header text-2xl font-semibold mb-2 text-pink-500">Luxurious Facials</h3>
+                <p class="text-gray-700 mb-4">
+                    Rejuvenate your skin with our exclusive Gold, Herbal, and Fruit facials. Experience the ultimate pampering for a radiant, glowing complexion.
+                </p>
+                <span class="text-pink-600 font-bold text-lg">$80 and up</span>
+            </div>
+
+            <div class="bg-white/70 p-6 rounded-3xl shadow-lg">
+                <h3 class="section-header text-2xl font-semibold mb-2 text-pink-500">Eyebrows & Lashes</h3>
+                <p class="text-gray-700 mb-4">
+                    Frame your eyes perfectly with our professional shaping, tinting, and lifting services. Achieve a stunning, effortless look.
+                </p>
+                <span class="text-pink-600 font-bold text-lg">Starting from $15</span>
+            </div>
+
+            <div class="bg-white/70 p-6 rounded-3xl shadow-lg">
+                <h3 class="section-header text-2xl font-semibold mb-2 text-pink-500">Expert Hair Removal</h3>
+                <p class="text-gray-700 mb-4">
+                    From threading to Brazilian waxing, our gentle techniques ensure smooth, flawless skin.
+                </p>
+                <span class="text-pink-600 font-bold text-lg">Services from $5</span>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="mt-12 fade-in" style="animation-delay: 0.8s;">
+            <p class="text-xl sm:text-2xl font-semibold mb-2 text-gray-800">Ready to glow?</p>
+            <p class="text-lg text-gray-700 mb-4">Located in **High River**</p>
+            <p class="text-lg text-gray-700 mb-6">Call us at <a href="tel:4036810775" class="text-pink-600 font-bold hover:underline">403-681-0775</a></p>
+            <a href="#" class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-bold py-4 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                Book Your Appointment Today!
+            </a>
+        </div>
+    </div>
+</body>
+</html>
